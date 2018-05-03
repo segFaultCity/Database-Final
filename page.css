@@ -1,0 +1,209 @@
+#top, #bottom, #left, #right {
+    background: #838383;
+    position: fixed;
+}
+            
+#left, #right {
+    top: 0; bottom: 0;
+    width: 8px;
+}
+            
+#left { 
+    left: 0; 
+}
+#right { 
+    right: 0; 
+}
+
+#top, #bottom {
+    left: 0; right: 0;
+    height: 8px;
+}
+            
+#top { top: 0; }
+#bottom { bottom: 0; } 
+
+body{
+    background-image: url(../images/tiles.jpg);
+    background-repeat: repeat;
+}
+
+#container{
+    width: 100%;
+    height: 602px;
+    display: block;
+}
+
+#sectionOne{
+    width: 33.33%;
+    height: 530px;
+    border-right: 4px solid black;
+    border-top: 4px solid black;
+    margin: 0;
+    float: left;
+}
+
+#sectionTwo{
+    width: 33.33%;
+    height: 530px;
+    margin: 0;
+    float: left;
+}
+
+#sectionThree{
+    width: 32.70%;
+    height: 530px;
+    border-top: 4px solid black;
+    border-left: 4px solid black;
+    margin: 0;
+    float: left;
+}
+
+#bar{
+    width: 400px;
+    height: 75px;
+    line-height: 75px;
+    background-color: #A0522D;
+    border: 6px solid #8B4513;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+#barSeatContainer{
+    width: 400px;
+    height: 110px;
+    margin: auto;
+}
+
+.barSeat{
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 3px solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+#sectionTwoContainer{
+    width: 410px;
+    height: 415px;
+    margin: auto;
+}
+
+.sectionTable1{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.sectionTable2{
+    width: 100px;
+    height: 100px;
+    border: 3px solid black;
+    background-color: white;
+    cursor: pointer;
+    margin-left: 180px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.addMargin{
+    margin-top: 40px;
+}
+
+#operationDiv{
+    display: none;
+    position: absolute;
+    margin: 0 auto;
+    width: 97.90%;
+    height: 50px;
+    border: 6px outset black;
+    background-color: white;
+    border-radius: 4px;
+}
+
+.operationButton{
+    width: 20%;
+    height: 50px;
+    border: 2px solid black;
+    float: left;
+    font-size: 20px;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.closeColor{
+    background-color: lightcoral;
+    font-weight: bolder;
+}
+
+.input1{
+    width: 75%;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+
+p{
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.seatID{
+    width: 75%;
+    height: 50px;
+    font-size: 30px;
+    font-weight: bolder;
+}
+
+.formButton{
+    width: 75%;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: gainsboro;
+    -webkit-transition-duration: 1.0s; /* Safari */
+    transition-duration: 1.0s;
+}
+
+.formButton:hover{
+    width: 75%;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin-top: 15px;
+    cursor: pointer;
+    background-color: ghostwhite;
+}
+
+#reserveDiv{
+    display: none;
+    width: 25%;
+    height: 95.5%;
+    border: 6px outset black;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+}
+
+#informationDiv{
+    display: none;
+    width: 25%;
+    height: 95.5%;
+    border: 6px outset black;
+    background-color: white;
+    position: absolute;
+    text-align: center;
+}

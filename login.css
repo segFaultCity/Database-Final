@@ -1,0 +1,206 @@
+/*
+@font-face{
+    font-family: loginFont;
+    src: url("../fonts/BlackHanSans-Regular.ttf");
+}
+*/
+
+#top, #bottom, #left, #right {
+    background: #838383;
+    position: fixed;
+}
+            
+#left, #right {
+    top: 0; bottom: 0;
+    width: 2px;
+}
+            
+#left { 
+    left: 0; 
+}
+#right { 
+    right: 0; 
+}
+
+#top, #bottom {
+    left: 0; right: 0;
+    height: 2px;
+}
+            
+#top { top: 0; }
+#bottom { bottom: 0; }  
+
+body{
+    background-image: url(../images/login.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#container{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    width: 730px;
+    height: 600px;
+}
+
+#wordDisplay{
+    width: 100%;
+    height: 300px;
+/*    border: 2px solid black;*/
+/*    border-radius: 10px;*/
+/*
+    background-color: #D3D3D3;
+    opacity: 0.7;
+*/
+    float: left;
+}
+
+#memberButton{
+    margin-left: 207px;
+    margin-top: 50px;
+    width: 300px;
+    height: 30px;
+    border: 2px outset black;
+    border-radius: 10px;
+    background-color: #838383;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: sans-serif;
+    -webkit-transition-duration: 1.0s; /* Safari */
+    transition-duration: 1.0s;
+    animation: buttonMove 4.5s;
+}
+
+#memberButton:hover{
+    margin-left: 207px;
+    margin-top: 50px;
+    width: 300px;
+    height: 30px;
+    border: 2px outset black;
+    border-radius: 10px;
+    background-color: #D3D3D3;
+    cursor: pointer; 
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#appearOne{
+    margin-left: 5px;
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    float: left;
+/*    width: 50%;*/
+    text-align: center;
+    padding: 10px;
+    text-shadow: 7px 7px black;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+}
+
+#appearTwo{
+    margin-top: 60px;
+    font-size: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    float: left;
+/*    width: 50%;*/
+    text-align: center;
+    padding: 10px;
+    text-shadow: 7px 7px black;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 2s;
+}
+
+#appearThree{
+    margin-top: 60px;   
+    font-size: 40px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 7px 7px black;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 3s;
+}
+
+#appearTitle{
+    margin-left: 70px;
+    margin-top: 0px;
+    font-size: 100px;
+    font-family: 'Black Han Sans', sans-serif;
+    color: white;
+    float: left;
+    text-align: center;
+    padding: 10px;
+    text-shadow: 10px 10px black;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+    animation-delay: 4s;
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@-webkit-keyframes buttonMove {
+    from {margin-top: 500px;}
+    to {margin-top: 50px;}
+}
+
+#loginPanel{
+    display: none;
+    margin-left: 207px;
+    margin-top: 10px;
+    width: 300px;
+    height: 145px;
+    border: 2px outset black;
+    border-radius: 10px;
+    background-color: #838383;
+}
+
+.fields{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 200px;
+    height: 30px;
+    border: 2px outset black;
+    border-radius: 10px;
+}
+
+.loginButton{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 207px;
+    height: 30px;
+    border: 2px outset black;
+    border-radius: 10px;
+    background-color: #D3D3D3; 
+    cursor: pointer;
+    -webkit-transition-duration: 1.0s; /* Safari */
+    transition-duration: 1.0s;
+}
+
+.loginButton:hover{
+    margin-top: 10px;
+    margin-left: 50px;
+    width: 207px;
+    height: 30px;
+    border: 2px outset black;
+    border-radius: 10px;
+    background-color: white; 
+    cursor: pointer;
+}
+
+
+}
