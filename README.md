@@ -13,7 +13,9 @@ Username:test
 Password:pass
 
 ## Description of our application
-Our application is designed to be used as a restaurant hostess application. Our program’s main goal is to help hostesses stay organized through an easy to use interface. The hostess can change the status of a table to reserved, walk-in, or empty and easily identify them by a change in color or receiving information through the "get information" button. This can eliminate confusion between hostesses by making the process easier, faster, and more reliable. 
+Our application is designed to be used as a restaurant hostess application. Our program’s main goal is to help hostesses stay organized through an easy to use interface. The hostess can change the status of a table to reserved, walk-in, or empty and easily identify them by a change in color or receiving information through the "get information" button. This can eliminate confusion between hostesses by making the process easier, faster, and more reliable.  
+  
+Our project was completed in 4 face-to-face meetings where we collaborated on the ideas, coding, and research for our project. All files were uploaded upon full completion except the README.md and some preliminary commitments. 
 
 ## Schema of Database
 Table - reserveTable - table of reservations made previous to arriving at the restaurant  
