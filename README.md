@@ -5,8 +5,11 @@
 *Logan Jakuboski  
 *Christian Caldwell  
 
+## Link to Website 
+http://jasontesreau.epizy.com/databaseFinal/login.php
+
 ## Login information
-Username:test
+Username:test  
 Password:pass
 
 ## Description of our application
@@ -37,6 +40,8 @@ Update - We implemented update through the UPDATE keyword (update.php). We are u
 Delete - We implemented delete through the use of the DELETE keyword(delete.php). We are deleting data when peoples reservations have expired or a customer leaves.  
   
 ## Video Link
+https://www.youtube.com/watch?v=fLpEok9wWAQ 
+
 
 
 
