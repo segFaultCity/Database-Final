@@ -30,10 +30,13 @@
             
             <!-- iFrame here keeps form action from redirecting or reloading page. All form targets go to this ID -->
             <iframe name="stayHere" style="display:none;"></iframe>
+            <iframe id="showMe" name="displayHere">
+                
+            </iframe>
             
             <div id="operationDiv">
                 <!-- open Pannel -->
-                <input class="operationButton" type="button" value="Reserve" onclick="openReserve()">
+                <input class="operationButton" type="button" value="Reserve/Update" onclick="openReserve()">
                 
                 <!-- add to walkin table (Create info in database) -->
                 <form action="addW.php" method="post" target="stayHere">
@@ -54,8 +57,10 @@
                 <input class="operationButton closeColor" type="button" value="Close" onclick="closeOperationDiv()">
                 
             </div>
-            <div id="reserveDiv">RESERVE FORM<hr>
+            <div id="reserveDiv">RESERVE/UPDATE FORM<hr>
+                <!-- Create -->
                 <form id="formR" action="add.php" method="post" target="stayHere">
+                    
                     <p id="seatID"></p>
                     <input id="autoFill" type="hidden" name="id">
                     <p>First Name<br/>
@@ -72,9 +77,30 @@
                     </p>
                     <input class="formButton" type="button" value="CANCEL" onclick="cancel()">
                     <input class="formButton" type="submit" value="SUBMIT" onclick="submitReserve()">
-                </form>   
+                    
+                </form>
+                <form action="update.php" method="post" target="stayHere">
+                    <input id="updateFName" type="hidden" name="fName">
+                    <input id="updateLName" type="hidden" name="lName">
+                    <input id="updateNIP" type="hidden" name="nip">
+                    <input id="updateTime" type="hidden" name="uTime">
+                    <input id="updateID" type="hidden" name="id4">
+                    <input class="formButton" type="submit" value="UPDATE" onclick="prepareUpdate()">
+                </form>    
             </div>
-            <div id="informationDiv">RESERVE INFO<hr></div>
+            <div id="informationDiv">RESERVE INFO<hr>
+                
+                <form action="readWI.php" target="displayHere">
+                    <input class="formButton" type="submit" value="CHECK WALK-IN INFO" onclick="prepareW()">
+                </form>
+                
+                <form action="readRI.php" target="displayHere">
+                    <input class="formButton" type="submit" value="CHECK RESERVATION INFO" onclick="prepareW()">
+                </form>
+                
+                <input class="formButton" type="button" value="CANCEL" onclick="cancel()">
+                
+            </div>
             <div id="sectionOne">
                 <input id="s1_1" class="sectionTable1 addMargin" type="button" value="s1_1" onclick="openOperator('s1_1')">
                 <input id="s1_2" class="sectionTable2 addMargin" type="button" value="s1_2" onclick="openOperator('s1_2')">
@@ -84,6 +110,12 @@
                 <input id="s1_6" class="sectionTable2" type="button" value="s1_6" onclick="openOperator('s1_6')">
                 <input id="s1_7" class="sectionTable1" type="button" value="s1_7" onclick="openOperator('s1_7')">
                 <input id="s1_8" class="sectionTable2" type="button" value="s1_8" onclick="openOperator('s1_8')">
+                <div id="allClearDiv">
+                    *Please Press This Button When Opening And Before Closing This Application. This Allows For A Clean Database Before Every Service Day.<br>
+                    <form action="clearAll.php" target="stayHere">
+                        <input class="clearALL" type=submit value="CLEAR ALL" onclick="clearAllseats()">
+                    </form>
+                </div>
             </div>
             <div id="sectionTwo">
                 <div id="bar">BAR</div>
@@ -104,6 +136,7 @@
                 </div>
             </div>
             <div id="sectionThree">
+                <input id="closeFrame" type=button value="CLOSE INFO WINDOW" onclick="closeWindow()">
                 <input id="s3_1" class="sectionTable1 addMargin" type="button" value="s3_1" onclick="openOperator('s3_1')">
                 <input id="s3_2" class="sectionTable2 addMargin" type="button" value="s3_2" onclick="openOperator('s3_2')">
                 <input id="s3_3" class="sectionTable1" type="button" value="s3_3" onclick="openOperator('s3_3')">
